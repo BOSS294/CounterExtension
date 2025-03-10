@@ -2,7 +2,8 @@
   "name": "counter",
   "displayName": "Counter Version 1",
   "description": "Counter Version 1 is a lightweight Visual Studio Code extension designed to help you track your coding sessions with an automatic countdown timer and detailed animated view. Each time you open a project, the extension begins counting your work session and displays the elapsed time in the status bar with a clock icon. Click the icon to view an interactive, animated display that breaks down the elapsed time into hours, minutes, and seconds with a smooth pulse effect. Ideal for developers looking to boost productivity and manage their time efficiently.",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "MayankChawdhari", 
   "engines": {
     "vscode": "^1.98.0"
   },
@@ -20,7 +21,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.showTimeAnimation",
+        "command": "counter.showTimeAnimation",
         "title": "Show Animated Elapsed Time"
       }
     ]
