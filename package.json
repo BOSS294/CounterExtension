@@ -1,12 +1,14 @@
 {
-  "name": "counter",
-  "displayName": "Counter Version 1",
-  "description": "Counter Version 1 is a lightweight Visual Studio Code extension designed to help you track your coding sessions with an automatic countdown timer and detailed animated view. Each time you open a project, the extension begins counting your work session and displays the elapsed time in the status bar with a clock icon. Click the icon to view an interactive, animated display that breaks down the elapsed time into hours, minutes, and seconds with a smooth pulse effect. Ideal for developers looking to boost productivity and manage their time efficiently.",
-  "version": "1.0.0",
-  "publisher": "MayankChawdhari", 
+  "name": "auroraclock",
+  "displayName": "AuroraClock",
+  "description": "AuroraClock is a lightweight Visual Studio Code extension designed to help you track your coding sessions with an automatic countdown timer and a visually stunning animated view featuring glassmorphism and neon effects. Each time you open a project, the extension begins counting your work session and displays the elapsed time in the status bar with a clock icon. Click the icon to view an interactive, animated display that breaks down the elapsed time into hours, minutes, and seconds with a smooth pulse effect. Ideal for developers looking to boost productivity and manage their time efficiently.",
+  "version": "1.1.0",
+  "publisher": "MayankChawdhari",
+  "releaseNotes": "See CHANGELOG.md for details on version 1.1.0 updates: Enhanced timer, animated webview, new themes, animated settings, and improved UI/UX. Extension renamed from Counter to AuroraClock.",
   "engines": {
     "vscode": "^1.98.0"
   },
+  "icon": "logo.png",
   "categories": [
     "Other"
   ],
@@ -18,14 +20,20 @@
     "onLanguage:cpp"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BOSS294/CounterExtension.git"
+  },
+  "license": "MIT",
   "contributes": {
     "commands": [
       {
-        "command": "counter.showTimeAnimation",
+        "command": "auroraclock.showTimeAnimation",
         "title": "Show Animated Elapsed Time"
       }
     ]
   },
+  
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
